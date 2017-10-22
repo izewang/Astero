@@ -18,6 +18,9 @@
 #include "AsteroRenderSystemCapabilities.h"
 #include "AsteroRenderOperation.h"
 #include "AsteroGLDefaultHardwareBuffer.h"
+#include "AsteroGLSupport.h"
+#include "AsteroRenderTarget.h"
+#include "AsteroRenderWindow.h"
 
 namespace Astero {
 	
@@ -31,6 +34,12 @@ namespace Astero {
 		return true;
 	}
 	
+	void RenderSystem::attachRenderTarget(RenderTarget & render_target) {
+		render_targets_.insert(RenderTargetMap::value_type(render_target.getName(), &render_target));
+		prioritized_render_targets_.insert(RenderTargetPriorityMap::value_type(render_target.getPriority(), &render_target));
+		
+	}
+	
 	GLRenderSystem::GLRenderSystem() {
 		state_cache_manager_ = new GLStateCacheManager;
 		render_attribs_bound_.reserve(100);
@@ -42,6 +51,17 @@ namespace Astero {
 	RenderSystemCapabilities* GLRenderSystem::createRenderSystemCapabilities() const {
 		RenderSystemCapabilities * rsc = new RenderSystemCapabilities();
 		return rsc;
+	}
+	
+	RenderWindow * GLRenderSystem::createRenderWindow(const std::string & name, unsigned int width, unsigned int height,
+													  bool full_screen, const NameValuePairList * misc_params) {
+		assert(render_targets_.find(name) == render_targets_.end());
+		RenderWindow * window = gl_support_->newWindow(name, width, height, full_screen, misc_params);
+		attachRenderTarget(*window);
+		if (!gl_initialized_) {
+			// Sets up GLSupport and GLEW.
+		}
+		return nullptr;
 	}
 	
 	const std::string & GLRenderSystem::getName() const {

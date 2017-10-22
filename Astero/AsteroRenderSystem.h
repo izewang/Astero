@@ -29,7 +29,6 @@ namespace Astero {
 	typedef std::list<Plane> PlaneList;
 	class ConfigOption;
 	typedef std::unordered_map<std::string, ConfigOption> ConfigOptionMap;
-	class RenderWindow;
 	enum ShadeOptions {
 		
 	};
@@ -48,6 +47,7 @@ namespace Astero {
 	class VertexBufferBinding;
 
 	class GpuProgram;
+	typedef std::unordered_map<std::string, std::string> NameValuePairList;
 	
 	class RenderSystem {
 	public:
@@ -57,12 +57,14 @@ namespace Astero {
 		virtual const std::string & getName() const = 0;
 		virtual ConfigOptionMap & getConfigOptions() = 0;
 		virtual void setConfigOption(const std::string & name, const std::string & value) = 0;
-		virtual RenderWindow* initialize();
+		virtual RenderWindow* initialize(bool auto_create_window, const std::string & window_title = "Astero Render Window");
 		virtual RenderSystemCapabilities* createRenderSystemCapabilities() const = 0;
 		virtual void shutdown();
 		virtual void setAmbientLight(float r, float g, float b) = 0;
 		virtual void setShadingType(ShadeOptions so) = 0;
-		virtual RenderWindow * createRenderWindow(const std::string & name, unsigned int width, unsigned int height);
+		// Creates a new rendering window, specified by parameters.
+		virtual RenderWindow * createRenderWindow(const std::string & name, unsigned int width, unsigned int height, bool full_screen,
+												  const NameValuePairList * misc_params = 0) = 0;
 		virtual void destroyRenderWindow(const std::string & name);
 		virtual void destroyRenderTexture(const std::string & name);
 		virtual void destroyRenderTarget(const std::string & name);
@@ -156,6 +158,11 @@ namespace Astero {
 	public:
 		GLRenderSystem();
 		
+		// See RenderSystem.
+		RenderWindow* initialize(bool auto_create_window, const std::string & window_title = "Astero Render Window") override;
+		// See RenderSystem.
+		RenderWindow * createRenderWindow(const std::string & name, unsigned int width, unsigned int height, bool full_screen,
+										  const NameValuePairList * misc_params = 0) override;
 		const std::string & getName() const override;
 		virtual RenderSystemCapabilities * createRenderSystemCapabilities() const override;
 		
@@ -179,6 +186,8 @@ namespace Astero {
 		unsigned short max_built_in_texture_attrib_index_;
 		unsigned short fixed_function_texture_units_number_;
 		unsigned short texture_coordinate_index_[16];
+		GLSupport * gl_support_;
+		bool gl_initialized_;
 		
 		Matrix4 view_matrix_;
 		Matrix4 world_matrix_;

@@ -13,6 +13,9 @@
 		941480921F8D0D18004DCB10 /* AsteroRenderSystemCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480911F8D0D18004DCB10 /* AsteroRenderSystemCapabilities.h */; };
 		941480941F8E168E004DCB10 /* AsteroGLDefaultHardwareBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480931F8E168E004DCB10 /* AsteroGLDefaultHardwareBuffer.h */; };
 		941480981F8FD955004DCB10 /* AsteroDepthBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480971F8FD955004DCB10 /* AsteroDepthBuffer.h */; };
+		941480DA1F9CC68E004DCB10 /* AsteroGLSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480D91F9CC68E004DCB10 /* AsteroGLSupport.h */; };
+		941480DC1F9CC8EE004DCB10 /* AsteroRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */; };
+		941480DE1F9CCB18004DCB10 /* AsteroRenderWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */; };
 		941C114B1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */; };
 		941C114D1F83B3460073B2DC /* AsteroHardwareBufferManager.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */; };
 		941C114F1F83B58E0073B2DC /* AsteroStdHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 941C114E1F83B58E0073B2DC /* AsteroStdHeaders.h */; };
@@ -53,6 +56,9 @@
 		941480911F8D0D18004DCB10 /* AsteroRenderSystemCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroRenderSystemCapabilities.h; sourceTree = "<group>"; };
 		941480931F8E168E004DCB10 /* AsteroGLDefaultHardwareBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroGLDefaultHardwareBuffer.h; sourceTree = "<group>"; };
 		941480971F8FD955004DCB10 /* AsteroDepthBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroDepthBuffer.h; sourceTree = "<group>"; };
+		941480D91F9CC68E004DCB10 /* AsteroGLSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroGLSupport.h; sourceTree = "<group>"; };
+		941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroRenderTarget.h; sourceTree = "<group>"; };
+		941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroRenderWindow.h; sourceTree = "<group>"; };
 		941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsteroHardwareBufferManager.cpp; sourceTree = "<group>"; };
 		941C114C1F83B3360073B2DC /* AsteroPrerequisites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsteroPrerequisites.h; sourceTree = "<group>"; };
 		941C114E1F83B58E0073B2DC /* AsteroStdHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroStdHeaders.h; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 				941C11521F84BEE50073B2DC /* AsteroSingleton.tpp */,
 				941C114E1F83B58E0073B2DC /* AsteroStdHeaders.h */,
 				941C114C1F83B3360073B2DC /* AsteroPrerequisites.h */,
+				941480D91F9CC68E004DCB10 /* AsteroGLSupport.h */,
 				94885EBE1F3BFCF400D42FFB /* AsteroMath.h */,
 				94885EC41F3C0B6B00D42FFB /* AsteroGeometry.h */,
 				940CA24A1F63C15B00DEDD4C /* AsteroHardwareBuffer.h */,
@@ -160,6 +167,8 @@
 				941480761F8B26F1004DCB10 /* AsteroGLStateCacheManager.h */,
 				94885EE11F52A93900D42FFB /* AsteroRenderSystem.h */,
 				941C11561F88FC930073B2DC /* AsteroRenderSystem.cpp */,
+				941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */,
+				941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */,
 				94885EBA1F3B35D500D42FFB /* Test.cpp */,
 				944C69BE1F73B00E0007B482 /* GL */,
 			);
@@ -184,6 +193,7 @@
 				941C114F1F83B58E0073B2DC /* AsteroStdHeaders.h in Headers */,
 				941480921F8D0D18004DCB10 /* AsteroRenderSystemCapabilities.h in Headers */,
 				944C69CC1F73B00E0007B482 /* glxtokens.h in Headers */,
+				941480DC1F9CC8EE004DCB10 /* AsteroRenderTarget.h in Headers */,
 				94885EDC1F5017D400D42FFB /* AsteroMesh.h in Headers */,
 				94885EB71F3B0DED00D42FFB /* nedmalloc.h in Headers */,
 				941480941F8E168E004DCB10 /* AsteroGLDefaultHardwareBuffer.h in Headers */,
@@ -200,7 +210,9 @@
 				94885EBF1F3BFCF400D42FFB /* AsteroMath.h in Headers */,
 				944C69CA1F73B00E0007B482 /* glxew.h in Headers */,
 				944C69CD1F73B00E0007B482 /* wglew.h in Headers */,
+				941480DE1F9CCB18004DCB10 /* AsteroRenderWindow.h in Headers */,
 				944C69CE1F73B00E0007B482 /* wglext.h in Headers */,
+				941480DA1F9CC68E004DCB10 /* AsteroGLSupport.h in Headers */,
 				94885EC71F493CCC00D42FFB /* AsteroResource.h in Headers */,
 				94885EBD1F3B3B8800D42FFB /* AsteroContainers.tpp in Headers */,
 				94885EB31F3B089A00D42FFB /* AsteroMemoryNedPooling.tpp in Headers */,

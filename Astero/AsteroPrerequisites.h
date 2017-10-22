@@ -26,6 +26,7 @@ namespace Astero {
 	class IndexData;
 	class VertexElement;
 	class RenderSystemCapabilities;
+	class RenderWindow;
 	class Matrix4;
 
 	
