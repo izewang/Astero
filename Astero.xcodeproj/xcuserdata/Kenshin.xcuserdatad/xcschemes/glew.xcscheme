@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "94885E8C1F39AF0800D42FFB"
-               BuildableName = "Astero.a"
-               BlueprintName = "Astero"
+               BlueprintIdentifier = "9414812D1F9DB832004DCB10"
+               BuildableName = "glew.a"
+               BlueprintName = "glew"
                ReferencedContainer = "container:Astero.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "94885E8C1F39AF0800D42FFB"
-            BuildableName = "Astero.a"
-            BlueprintName = "Astero"
+            BlueprintIdentifier = "9414812D1F9DB832004DCB10"
+            BuildableName = "glew.a"
+            BlueprintName = "glew"
             ReferencedContainer = "container:Astero.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "94885E8C1F39AF0800D42FFB"
-            BuildableName = "Astero.a"
-            BlueprintName = "Astero"
+            BlueprintIdentifier = "9414812D1F9DB832004DCB10"
+            BuildableName = "glew.a"
+            BlueprintName = "glew"
             ReferencedContainer = "container:Astero.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

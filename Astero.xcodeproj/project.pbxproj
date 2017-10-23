@@ -16,6 +16,29 @@
 		941480DA1F9CC68E004DCB10 /* AsteroGLSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480D91F9CC68E004DCB10 /* AsteroGLSupport.h */; };
 		941480DC1F9CC8EE004DCB10 /* AsteroRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */; };
 		941480DE1F9CCB18004DCB10 /* AsteroRenderWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */; };
+		941481261F9DB6D2004DCB10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941481251F9DB6D2004DCB10 /* main.cpp */; };
+		941481371F9DB8CD004DCB10 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941481361F9DB8CD004DCB10 /* CoreFoundation.framework */; };
+		941481391F9DB8DE004DCB10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941481381F9DB8DE004DCB10 /* CoreGraphics.framework */; };
+		9414813B1F9DB8E7004DCB10 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9414813A1F9DB8E7004DCB10 /* CoreVideo.framework */; };
+		9414813D1F9DB8F4004DCB10 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9414813C1F9DB8F4004DCB10 /* IOKit.framework */; };
+		9414813F1F9DB902004DCB10 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9414813E1F9DB902004DCB10 /* AppKit.framework */; };
+		941481431F9DBABA004DCB10 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 941481421F9DBABA004DCB10 /* glew.c */; };
+		941481451F9DBABA004DCB10 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 941481421F9DBABA004DCB10 /* glew.c */; };
+		9414814B1F9DBB57004DCB10 /* eglew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481471F9DBB57004DCB10 /* eglew.h */; };
+		9414814C1F9DBB57004DCB10 /* eglew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481471F9DBB57004DCB10 /* eglew.h */; };
+		9414814D1F9DBB57004DCB10 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481481F9DBB57004DCB10 /* glew.h */; };
+		9414814E1F9DBB57004DCB10 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481481F9DBB57004DCB10 /* glew.h */; };
+		9414814F1F9DBB57004DCB10 /* glxew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481491F9DBB57004DCB10 /* glxew.h */; };
+		941481501F9DBB57004DCB10 /* glxew.h in Headers */ = {isa = PBXBuildFile; fileRef = 941481491F9DBB57004DCB10 /* glxew.h */; };
+		941481511F9DBB57004DCB10 /* wglew.h in Headers */ = {isa = PBXBuildFile; fileRef = 9414814A1F9DBB57004DCB10 /* wglew.h */; };
+		941481521F9DBB57004DCB10 /* wglew.h in Headers */ = {isa = PBXBuildFile; fileRef = 9414814A1F9DBB57004DCB10 /* wglew.h */; };
+		941481541F9DBBBC004DCB10 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941481531F9DBBBC004DCB10 /* OpenGL.framework */; };
+		941481591F9DBCEC004DCB10 /* glew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9414812E1F9DB832004DCB10 /* glew.a */; };
+		9414815D1F9DBD4F004DCB10 /* glfw3.h in Headers */ = {isa = PBXBuildFile; fileRef = 9414815B1F9DBD4F004DCB10 /* glfw3.h */; };
+		9414815E1F9DBD4F004DCB10 /* glfw3native.h in Headers */ = {isa = PBXBuildFile; fileRef = 9414815C1F9DBD4F004DCB10 /* glfw3native.h */; };
+		941481601F9DBD7E004DCB10 /* glfw_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9414815F1F9DBD7E004DCB10 /* glfw_config.h */; };
+		941481621F9DBDD8004DCB10 /* glfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 941481611F9DBDD8004DCB10 /* glfw3.a */; };
+		941481651F9DBF43004DCB10 /* Astero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94885E8D1F39AF0800D42FFB /* Astero.a */; };
 		941C114B1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */; };
 		941C114D1F83B3460073B2DC /* AsteroHardwareBufferManager.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */; };
 		941C114F1F83B58E0073B2DC /* AsteroStdHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 941C114E1F83B58E0073B2DC /* AsteroStdHeaders.h */; };
@@ -23,21 +46,12 @@
 		941C11531F84BEE50073B2DC /* AsteroSingleton.tpp in Headers */ = {isa = PBXBuildFile; fileRef = 941C11521F84BEE50073B2DC /* AsteroSingleton.tpp */; };
 		941C11551F88CF230073B2DC /* AsteroVertexIndexData.h in Headers */ = {isa = PBXBuildFile; fileRef = 941C11541F88CF230073B2DC /* AsteroVertexIndexData.h */; };
 		941C11571F88FC930073B2DC /* AsteroRenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 941C11561F88FC930073B2DC /* AsteroRenderSystem.cpp */; };
-		944C69C71F73B00E0007B482 /* gl.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69BF1F73B00E0007B482 /* gl.h */; };
-		944C69C81F73B00E0007B482 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C01F73B00E0007B482 /* glew.h */; };
-		944C69C91F73B00E0007B482 /* glext.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C11F73B00E0007B482 /* glext.h */; };
-		944C69CA1F73B00E0007B482 /* glxew.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C21F73B00E0007B482 /* glxew.h */; };
-		944C69CB1F73B00E0007B482 /* glxext.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C31F73B00E0007B482 /* glxext.h */; };
-		944C69CC1F73B00E0007B482 /* glxtokens.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C41F73B00E0007B482 /* glxtokens.h */; };
-		944C69CD1F73B00E0007B482 /* wglew.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C51F73B00E0007B482 /* wglew.h */; };
-		944C69CE1F73B00E0007B482 /* wglext.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69C61F73B00E0007B482 /* wglext.h */; };
 		944C69D01F73B06F0007B482 /* AsteroHardwareBufferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 944C69CF1F73B06F0007B482 /* AsteroHardwareBufferManager.h */; };
 		94885E9C1F39B0C000D42FFB /* AsteroAllocator.tpp in Headers */ = {isa = PBXBuildFile; fileRef = 94885E9B1F39B0C000D42FFB /* AsteroAllocator.tpp */; };
 		94885EB31F3B089A00D42FFB /* AsteroMemoryNedPooling.tpp in Headers */ = {isa = PBXBuildFile; fileRef = 94885EB11F3B089A00D42FFB /* AsteroMemoryNedPooling.tpp */; };
 		94885EB51F3B0DBB00D42FFB /* nedmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 94885EB41F3B0DBB00D42FFB /* nedmalloc.c */; };
 		94885EB71F3B0DED00D42FFB /* nedmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 94885EB61F3B0DED00D42FFB /* nedmalloc.h */; };
 		94885EB91F3B115200D42FFB /* malloc.c.h in Headers */ = {isa = PBXBuildFile; fileRef = 94885EB81F3B115200D42FFB /* malloc.c.h */; };
-		94885EBB1F3B35D500D42FFB /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94885EBA1F3B35D500D42FFB /* Test.cpp */; };
 		94885EBD1F3B3B8800D42FFB /* AsteroContainers.tpp in Headers */ = {isa = PBXBuildFile; fileRef = 94885EBC1F3B3B8800D42FFB /* AsteroContainers.tpp */; };
 		94885EBF1F3BFCF400D42FFB /* AsteroMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 94885EBE1F3BFCF400D42FFB /* AsteroMath.h */; };
 		94885EC51F3C0B6C00D42FFB /* AsteroGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 94885EC41F3C0B6B00D42FFB /* AsteroGeometry.h */; };
@@ -49,6 +63,35 @@
 		94FA21761F7E5FBD00222B0C /* AsteroRenderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA21751F7E5FBD00222B0C /* AsteroRenderOperation.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		941481571F9DBCE8004DCB10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94885E851F39AF0800D42FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9414812D1F9DB832004DCB10;
+			remoteInfo = glew;
+		};
+		941481631F9DBF21004DCB10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94885E851F39AF0800D42FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94885E8C1F39AF0800D42FFB;
+			remoteInfo = Astero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		941481211F9DB6D2004DCB10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		940CA24A1F63C15B00DEDD4C /* AsteroHardwareBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroHardwareBuffer.h; sourceTree = "<group>"; };
 		941480761F8B26F1004DCB10 /* AsteroGLStateCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroGLStateCacheManager.h; sourceTree = "<group>"; };
@@ -59,6 +102,24 @@
 		941480D91F9CC68E004DCB10 /* AsteroGLSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroGLSupport.h; sourceTree = "<group>"; };
 		941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroRenderTarget.h; sourceTree = "<group>"; };
 		941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroRenderWindow.h; sourceTree = "<group>"; };
+		941481231F9DB6D2004DCB10 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		941481251F9DB6D2004DCB10 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9414812E1F9DB832004DCB10 /* glew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = glew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		941481361F9DB8CD004DCB10 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		941481381F9DB8DE004DCB10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9414813A1F9DB8E7004DCB10 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9414813C1F9DB8F4004DCB10 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9414813E1F9DB902004DCB10 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		941481421F9DBABA004DCB10 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glew.c; sourceTree = "<group>"; };
+		941481471F9DBB57004DCB10 /* eglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eglew.h; sourceTree = "<group>"; };
+		941481481F9DBB57004DCB10 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		941481491F9DBB57004DCB10 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		9414814A1F9DBB57004DCB10 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		941481531F9DBBBC004DCB10 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9414815B1F9DBD4F004DCB10 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		9414815C1F9DBD4F004DCB10 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		9414815F1F9DBD7E004DCB10 /* glfw_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw_config.h; sourceTree = "<group>"; };
+		941481611F9DBDD8004DCB10 /* glfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = glfw3.a; path = "../../Downloads/glfw-master/build/src/Debug/glfw3.a"; sourceTree = "<group>"; };
 		941C114A1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsteroHardwareBufferManager.cpp; sourceTree = "<group>"; };
 		941C114C1F83B3360073B2DC /* AsteroPrerequisites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsteroPrerequisites.h; sourceTree = "<group>"; };
 		941C114E1F83B58E0073B2DC /* AsteroStdHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroStdHeaders.h; sourceTree = "<group>"; };
@@ -66,22 +127,13 @@
 		941C11521F84BEE50073B2DC /* AsteroSingleton.tpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsteroSingleton.tpp; sourceTree = "<group>"; };
 		941C11541F88CF230073B2DC /* AsteroVertexIndexData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroVertexIndexData.h; sourceTree = "<group>"; };
 		941C11561F88FC930073B2DC /* AsteroRenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsteroRenderSystem.cpp; sourceTree = "<group>"; };
-		944C69BF1F73B00E0007B482 /* gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl.h; sourceTree = "<group>"; };
-		944C69C01F73B00E0007B482 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
-		944C69C11F73B00E0007B482 /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
-		944C69C21F73B00E0007B482 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
-		944C69C31F73B00E0007B482 /* glxext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxext.h; sourceTree = "<group>"; };
-		944C69C41F73B00E0007B482 /* glxtokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxtokens.h; sourceTree = "<group>"; };
-		944C69C51F73B00E0007B482 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
-		944C69C61F73B00E0007B482 /* wglext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglext.h; sourceTree = "<group>"; };
 		944C69CF1F73B06F0007B482 /* AsteroHardwareBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroHardwareBufferManager.h; sourceTree = "<group>"; };
-		94885E8D1F39AF0800D42FFB /* libAstero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAstero.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		94885E8D1F39AF0800D42FFB /* Astero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = Astero.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94885E9B1F39B0C000D42FFB /* AsteroAllocator.tpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = AsteroAllocator.tpp; sourceTree = "<group>"; };
 		94885EB11F3B089A00D42FFB /* AsteroMemoryNedPooling.tpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = AsteroMemoryNedPooling.tpp; sourceTree = "<group>"; };
 		94885EB41F3B0DBB00D42FFB /* nedmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nedmalloc.c; sourceTree = "<group>"; };
 		94885EB61F3B0DED00D42FFB /* nedmalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nedmalloc.h; sourceTree = "<group>"; };
 		94885EB81F3B115200D42FFB /* malloc.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = malloc.c.h; sourceTree = "<group>"; };
-		94885EBA1F3B35D500D42FFB /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		94885EBC1F3B3B8800D42FFB /* AsteroContainers.tpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = AsteroContainers.tpp; sourceTree = "<group>"; };
 		94885EBE1F3BFCF400D42FFB /* AsteroMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroMath.h; sourceTree = "<group>"; };
 		94885EC41F3C0B6B00D42FFB /* AsteroGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsteroGeometry.h; sourceTree = "<group>"; };
@@ -94,6 +146,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		941481201F9DB6D2004DCB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9414813F1F9DB902004DCB10 /* AppKit.framework in Frameworks */,
+				9414813D1F9DB8F4004DCB10 /* IOKit.framework in Frameworks */,
+				9414813B1F9DB8E7004DCB10 /* CoreVideo.framework in Frameworks */,
+				941481391F9DB8DE004DCB10 /* CoreGraphics.framework in Frameworks */,
+				941481371F9DB8CD004DCB10 /* CoreFoundation.framework in Frameworks */,
+				941481541F9DBBBC004DCB10 /* OpenGL.framework in Frameworks */,
+				941481591F9DBCEC004DCB10 /* glew.a in Frameworks */,
+				941481621F9DBDD8004DCB10 /* glfw3.a in Frameworks */,
+				941481651F9DBF43004DCB10 /* Astero.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9414812B1F9DB832004DCB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94885E8A1F39AF0800D42FFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,33 +179,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		944C69BE1F73B00E0007B482 /* GL */ = {
+		9414811C1F9DB67A004DCB10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				944C69BF1F73B00E0007B482 /* gl.h */,
-				944C69C01F73B00E0007B482 /* glew.h */,
-				944C69C11F73B00E0007B482 /* glext.h */,
-				944C69C21F73B00E0007B482 /* glxew.h */,
-				944C69C31F73B00E0007B482 /* glxext.h */,
-				944C69C41F73B00E0007B482 /* glxtokens.h */,
-				944C69C51F73B00E0007B482 /* wglew.h */,
-				944C69C61F73B00E0007B482 /* wglext.h */,
+				941481611F9DBDD8004DCB10 /* glfw3.a */,
+				941481531F9DBBBC004DCB10 /* OpenGL.framework */,
+				9414813E1F9DB902004DCB10 /* AppKit.framework */,
+				9414813C1F9DB8F4004DCB10 /* IOKit.framework */,
+				9414813A1F9DB8E7004DCB10 /* CoreVideo.framework */,
+				941481381F9DB8DE004DCB10 /* CoreGraphics.framework */,
+				941481361F9DB8CD004DCB10 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		941481241F9DB6D2004DCB10 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				941481251F9DB6D2004DCB10 /* main.cpp */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		941481461F9DBB57004DCB10 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				941481471F9DBB57004DCB10 /* eglew.h */,
+				941481481F9DBB57004DCB10 /* glew.h */,
+				941481491F9DBB57004DCB10 /* glxew.h */,
+				9414814A1F9DBB57004DCB10 /* wglew.h */,
 			);
 			path = GL;
+			sourceTree = "<group>";
+		};
+		9414815A1F9DBD4F004DCB10 /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				9414815B1F9DBD4F004DCB10 /* glfw3.h */,
+				9414815C1F9DBD4F004DCB10 /* glfw3native.h */,
+			);
+			path = GLFW;
 			sourceTree = "<group>";
 		};
 		94885E841F39AF0800D42FFB = {
 			isa = PBXGroup;
 			children = (
 				94885E8F1F39AF0800D42FFB /* Astero */,
+				941481241F9DB6D2004DCB10 /* Test */,
 				94885E8E1F39AF0800D42FFB /* Products */,
+				9414811C1F9DB67A004DCB10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		94885E8E1F39AF0800D42FFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94885E8D1F39AF0800D42FFB /* libAstero.a */,
+				94885E8D1F39AF0800D42FFB /* Astero.a */,
+				941481231F9DB6D2004DCB10 /* Test */,
+				9414812E1F9DB832004DCB10 /* glew.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,8 +275,10 @@
 				941C11561F88FC930073B2DC /* AsteroRenderSystem.cpp */,
 				941480DB1F9CC8EE004DCB10 /* AsteroRenderTarget.h */,
 				941480DD1F9CCB18004DCB10 /* AsteroRenderWindow.h */,
-				94885EBA1F3B35D500D42FFB /* Test.cpp */,
-				944C69BE1F73B00E0007B482 /* GL */,
+				941481421F9DBABA004DCB10 /* glew.c */,
+				9414815F1F9DBD7E004DCB10 /* glfw_config.h */,
+				941481461F9DBB57004DCB10 /* GL */,
+				9414815A1F9DBD4F004DCB10 /* GLFW */,
 			);
 			path = Astero;
 			sourceTree = "<group>";
@@ -178,29 +286,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9414812C1F9DB832004DCB10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941481501F9DBB57004DCB10 /* glxew.h in Headers */,
+				9414814C1F9DBB57004DCB10 /* eglew.h in Headers */,
+				9414814E1F9DBB57004DCB10 /* glew.h in Headers */,
+				941481521F9DBB57004DCB10 /* wglew.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94885E8B1F39AF0800D42FFB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944C69C81F73B00E0007B482 /* glew.h in Headers */,
 				941C114D1F83B3460073B2DC /* AsteroHardwareBufferManager.cpp in Headers */,
-				944C69C91F73B00E0007B482 /* glext.h in Headers */,
 				94885EDE1F515EC700D42FFB /* AsteroMeshLoader.h in Headers */,
+				941481601F9DBD7E004DCB10 /* glfw_config.h in Headers */,
 				941480791F8C7683004DCB10 /* AsteroGpuProgram.h in Headers */,
+				9414815E1F9DBD4F004DCB10 /* glfw3native.h in Headers */,
 				94885EC51F3C0B6C00D42FFB /* AsteroGeometry.h in Headers */,
 				941480981F8FD955004DCB10 /* AsteroDepthBuffer.h in Headers */,
-				944C69CB1F73B00E0007B482 /* glxext.h in Headers */,
 				941C114F1F83B58E0073B2DC /* AsteroStdHeaders.h in Headers */,
 				941480921F8D0D18004DCB10 /* AsteroRenderSystemCapabilities.h in Headers */,
-				944C69CC1F73B00E0007B482 /* glxtokens.h in Headers */,
 				941480DC1F9CC8EE004DCB10 /* AsteroRenderTarget.h in Headers */,
 				94885EDC1F5017D400D42FFB /* AsteroMesh.h in Headers */,
+				9414814D1F9DBB57004DCB10 /* glew.h in Headers */,
 				94885EB71F3B0DED00D42FFB /* nedmalloc.h in Headers */,
 				941480941F8E168E004DCB10 /* AsteroGLDefaultHardwareBuffer.h in Headers */,
 				94885E9C1F39B0C000D42FFB /* AsteroAllocator.tpp in Headers */,
-				944C69C71F73B00E0007B482 /* gl.h in Headers */,
 				941C11531F84BEE50073B2DC /* AsteroSingleton.tpp in Headers */,
 				94885EE21F52A93A00D42FFB /* AsteroRenderSystem.h in Headers */,
+				941481511F9DBB57004DCB10 /* wglew.h in Headers */,
 				941480771F8B26F1004DCB10 /* AsteroGLStateCacheManager.h in Headers */,
 				944C69D01F73B06F0007B482 /* AsteroHardwareBufferManager.h in Headers */,
 				940CA24B1F63C15B00DEDD4C /* AsteroHardwareBuffer.h in Headers */,
@@ -208,14 +326,14 @@
 				94FA21761F7E5FBD00222B0C /* AsteroRenderOperation.h in Headers */,
 				94885EE01F515F5A00D42FFB /* AsteroDataStream.h in Headers */,
 				94885EBF1F3BFCF400D42FFB /* AsteroMath.h in Headers */,
-				944C69CA1F73B00E0007B482 /* glxew.h in Headers */,
-				944C69CD1F73B00E0007B482 /* wglew.h in Headers */,
 				941480DE1F9CCB18004DCB10 /* AsteroRenderWindow.h in Headers */,
-				944C69CE1F73B00E0007B482 /* wglext.h in Headers */,
 				941480DA1F9CC68E004DCB10 /* AsteroGLSupport.h in Headers */,
+				9414814F1F9DBB57004DCB10 /* glxew.h in Headers */,
 				94885EC71F493CCC00D42FFB /* AsteroResource.h in Headers */,
 				94885EBD1F3B3B8800D42FFB /* AsteroContainers.tpp in Headers */,
 				94885EB31F3B089A00D42FFB /* AsteroMemoryNedPooling.tpp in Headers */,
+				9414815D1F9DBD4F004DCB10 /* glfw3.h in Headers */,
+				9414814B1F9DBB57004DCB10 /* eglew.h in Headers */,
 				94885EB91F3B115200D42FFB /* malloc.c.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +341,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		941481221F9DB6D2004DCB10 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941481271F9DB6D2004DCB10 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				9414811F1F9DB6D2004DCB10 /* Sources */,
+				941481201F9DB6D2004DCB10 /* Frameworks */,
+				941481211F9DB6D2004DCB10 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				941481581F9DBCE8004DCB10 /* PBXTargetDependency */,
+				941481641F9DBF21004DCB10 /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = 941481231F9DB6D2004DCB10 /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
+		9414812D1F9DB832004DCB10 /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9414812F1F9DB832004DCB10 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				9414812A1F9DB832004DCB10 /* Sources */,
+				9414812B1F9DB832004DCB10 /* Frameworks */,
+				9414812C1F9DB832004DCB10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 9414812E1F9DB832004DCB10 /* glew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		94885E8C1F39AF0800D42FFB /* Astero */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94885E981F39AF0900D42FFB /* Build configuration list for PBXNativeTarget "Astero" */;
@@ -237,7 +391,7 @@
 			);
 			name = Astero;
 			productName = Astero;
-			productReference = 94885E8D1F39AF0800D42FFB /* libAstero.a */;
+			productReference = 94885E8D1F39AF0800D42FFB /* Astero.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -249,6 +403,14 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Yuzhe Wang";
 				TargetAttributes = {
+					941481221F9DB6D2004DCB10 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					9414812D1F9DB832004DCB10 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					94885E8C1F39AF0800D42FFB = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -268,17 +430,35 @@
 			projectRoot = "";
 			targets = (
 				94885E8C1F39AF0800D42FFB /* Astero */,
+				941481221F9DB6D2004DCB10 /* Test */,
+				9414812D1F9DB832004DCB10 /* glew */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9414811F1F9DB6D2004DCB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941481261F9DB6D2004DCB10 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9414812A1F9DB832004DCB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941481451F9DBABA004DCB10 /* glew.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94885E891F39AF0800D42FFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941481431F9DBABA004DCB10 /* glew.c in Sources */,
 				94885EB51F3B0DBB00D42FFB /* nedmalloc.c in Sources */,
-				94885EBB1F3B35D500D42FFB /* Test.cpp in Sources */,
 				941C114B1F83B2550073B2DC /* AsteroHardwareBufferManager.cpp in Sources */,
 				941C11511F84AE5D0073B2DC /* AsteroHardwareBuffer.cpp in Sources */,
 				941C11571F88FC930073B2DC /* AsteroRenderSystem.cpp in Sources */,
@@ -287,7 +467,63 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		941481581F9DBCE8004DCB10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9414812D1F9DB832004DCB10 /* glew */;
+			targetProxy = 941481571F9DBCE8004DCB10 /* PBXContainerItemProxy */;
+		};
+		941481641F9DBF21004DCB10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94885E8C1F39AF0800D42FFB /* Astero */;
+			targetProxy = 941481631F9DBF21004DCB10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		941481281F9DB6D2004DCB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GLEW_STATIC,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		941481291F9DB6D2004DCB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		941481301F9DB832004DCB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		941481311F9DB832004DCB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		94885E961F39AF0800D42FFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,7 +616,8 @@
 		94885E991F39AF0900D42FFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Astero\"";
@@ -396,7 +633,8 @@
 		94885E9A1F39AF0900D42FFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Astero\"";
@@ -412,6 +650,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		941481271F9DB6D2004DCB10 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941481281F9DB6D2004DCB10 /* Debug */,
+				941481291F9DB6D2004DCB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9414812F1F9DB832004DCB10 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941481301F9DB832004DCB10 /* Debug */,
+				941481311F9DB832004DCB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		94885E881F39AF0800D42FFB /* Build configuration list for PBXProject "Astero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
