@@ -60,6 +60,7 @@ namespace Astero {
 		attachRenderTarget(*window);
 		if (!gl_initialized_) {
 			// Sets up GLSupport and GLEW.
+			initializeContext(window);
 		}
 		return nullptr;
 	}
